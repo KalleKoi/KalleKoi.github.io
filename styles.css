@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(to bottom, #f5cac3, #f7ede2);
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #ff477e;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    animation: bounceIn 1s ease-out;
+}
+
+#valentineImage {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#yesButton, #no {
+    background-color: #06d6a0;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 10px;
+}
+
+#yesButton {
+    background-color: #06d6a0;
+}
+
+#no {
+    background-color: #ef476f;
+}
+
+#yesButton:hover, #no:hover {
+    transform: scale(1.1);
+    background-color: #028f7f;
+}
+
+#no:hover {
+    background-color: #e0003b;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#no {
+    position: absolute;
+    transition: left 0.3s, top 0.3s;
+}
