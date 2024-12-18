@@ -1,6 +1,7 @@
+
 body {
-    background: linear-gradient(to bottom, #f5cac3, #f7ede2);
-    font-family: 'Arial', sans-serif;
+    background: #a0d8ff; 
+    font-family: 'Courier New', Courier, monospace; 
     height: 100vh;
     margin: 0;
     display: flex;
@@ -9,13 +10,14 @@ body {
     flex-direction: column;
 }
 
+
 div {
     text-align: center;
     animation: fadeIn 2s ease-in-out;
 }
 
 h1 {
-    color: #ff477e;
+    color: #003366; 
     font-size: 3em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
@@ -26,39 +28,44 @@ h1 {
     max-width: 100%;
     width: 300px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 50%;
     transition: transform 0.3s ease;
     animation: fadeIn 2s ease-in-out;
 }
 
 #yesButton, #no {
-    background-color: #06d6a0;
+    background-color: #56c7ff;
     color: white;
     border: none;
     padding: 15px 30px;
     font-size: 1.2em;
-    border-radius: 5px;
+    border-radius: 50px; 
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
     margin: 10px;
+    font-family: 'Courier New', Courier, monospace; 
 }
+
 
 #yesButton {
-    background-color: #06d6a0;
+    background-color: #56c7ff; 
 }
 
+
 #no {
-    background-color: #ef476f;
+    background-color: #ff4f4f; 
 }
 
 #yesButton:hover, #no:hover {
     transform: scale(1.1);
-    background-color: #028f7f;
+    background-color: #0293d3; 
 }
 
+
 #no:hover {
-    background-color: #e0003b;
+    background-color: #d43535; 
 }
+
 
 @keyframes fadeIn {
     0% {
@@ -71,6 +78,7 @@ h1 {
     }
 }
 
+
 @keyframes bounceIn {
     0% {
         transform: scale(0);
@@ -82,6 +90,7 @@ h1 {
         transform: scale(1);
     }
 }
+
 
 #no {
     position: absolute;
